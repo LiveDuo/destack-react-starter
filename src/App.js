@@ -1,12 +1,18 @@
 import 'grapesjs/dist/css/grapes.min.css'
 
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
 import { ContentProviderReact } from 'destack'
 
 const App = () => {
   return (
-    <div style={{ height: '100%' }}>
-      <ContentProviderReact />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<ContentProviderReact />} />
+        <Route path="/page2" element={<ContentProviderReact />} />
+        <Route path="/page3" element={<>Page 3</>} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 export default App
