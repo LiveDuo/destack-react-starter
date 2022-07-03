@@ -14,7 +14,7 @@ Deploy the example using [Vercel](https://vercel.com) or preview in Gitpod:
 [<img src="https://github.com/LiveDuo/destack/raw/main/assets/gitpod_big.png" width="92">](https://gitpod.io/#https://github.com/LiveDuo/destack-react-starter)
 
 
-#### How to
+## How to
 
 #### Development
 
