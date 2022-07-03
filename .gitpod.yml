@@ -1,6 +1,6 @@
 tasks:
   - init: npm i
-    command: npm start
+    command: npm run dev
 ports:
   - port: 3000
     onOpen: open-browser
