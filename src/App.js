@@ -1,5 +1,3 @@
-import 'destack/build/browser/index.css'
-
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import { ContentProviderReact } from 'destack'
