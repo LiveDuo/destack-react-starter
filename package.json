@@ -5,7 +5,7 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
-    "destack": "^2.1.0",
+    "destack": "^3.0.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.2.1",
@@ -13,9 +13,9 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "dev": "destack -d \"react-scripts start\"",
-    "build": "destack -b \"react-scripts build\"",
-    "start": "http-server ./build -p 3000 --proxy http://localhost:3000/?",
+    "dev": "NODE_OPTIONS=--openssl-legacy-provider destack -d \"react-scripts start\"",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider destack -b \"react-scripts build\"",
+    "start": "NODE_OPTIONS=--openssl-legacy-provider http-server ./build -p 3000 --proxy http://localhost:3000/?",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
